@@ -84,8 +84,7 @@ form input[type="submit"]:hover {
     border: none;
 }
 
-@media (min-width: 320px),
-(max-width: 500px) {
+@media (max-width: 500px) {
     .Contact {
         flex-direction: column;
         height: 600px;
