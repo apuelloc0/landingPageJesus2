@@ -95,12 +95,12 @@
     }
 
     .Information img:nth-child(1) {
-        width: 172px;
+        width: 45%;
         height: 227px;
     }
 
     .Information img:nth-child(2) {
-        width: 172px;
+        width: 45%;
         height: 227px;
     }
 }
