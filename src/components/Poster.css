@@ -1,0 +1,43 @@
+.Poster {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background: linear-gradient(rgba(1, 0, 9, 0.5), rgba(2, 0, 28, 0.5)),
+        url("../images/fontaneria.jpg");
+    /* background-position: cover; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Poster h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.Poster p {
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width: 375px) {
+    .Poster {
+        height: 600px;
+        margin-top: 70px;
+    }
+
+    .Poster h1 {
+        font-size: 40px;
+        margin-left: 13px;
+    }
+
+    .Poster p {
+        font-size: 17px;
+        margin: 0 10px 0 20px;
+    }
+}

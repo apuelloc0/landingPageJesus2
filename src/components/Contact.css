@@ -1,0 +1,126 @@
+.Contact {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: rgb(0, 0, 19)
+}
+
+.GetInTouch {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 100px;
+}
+
+.GetInTouch .contact-us .info-text h3 {
+    color: white;
+}
+
+.Contact-flex {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+form input,
+textarea {
+    width: 80%;
+    height: 20px;
+    background-color: rgb(2, 2, 25);
+    border: 0.3px solid rgb(41, 41, 41);
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    font-weight: 400;
+    /* margin: 15px 0; */
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form textarea {
+    max-height: 144px;
+}
+
+form input,
+textarea:focus {
+    outline: none;
+}
+
+form textarea {
+    height: 192px;
+}
+
+form input[type="submit"] {
+    width: 200px;
+    height: 55px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: 1.5px solid rgb(41, 41, 41);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+    transition: ease .3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+@media (max-width: 375px) {
+    .Contact {
+        flex-direction: column;
+        height: 600px;
+    }
+
+
+    .GetInTouch {
+        width: 100%;
+        height: 50%;
+        gap: 14px;
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center
+    }
+
+    .GetInTouch .contact-us {
+        width: 80%;
+        height: 70px
+    }
+
+    .GetInTouch .contact-us .info-text h3 {
+        font-size: 17px;
+    }
+
+    .GetInTouch .contact-us .info-text span {
+        font-size: 15px;
+        margin-left: 31px;
+    }
+
+    .Contact-flex {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+}
