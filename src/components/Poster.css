@@ -25,7 +25,8 @@
     font-size: 30px;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px),
+(max-width: 500px) {
     .Poster {
         height: 600px;
         margin-top: 70px;

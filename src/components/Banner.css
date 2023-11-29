@@ -17,7 +17,8 @@
     text-align: center;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px),
+(max-width: 500px) {
     .Banner {
         height: 279px;
     }

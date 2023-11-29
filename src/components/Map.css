@@ -15,7 +15,8 @@
     z-index: 0;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px),
+(max-width: 500px) {
     .Map-container {
         width: 90%;
         height: 90%;

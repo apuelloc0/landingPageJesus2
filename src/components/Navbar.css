@@ -131,7 +131,8 @@ svg {
     letter-spacing: 0.4px;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 320px),
+(max-width: 500px) {
 
     .Header {
         height: 70px;
