@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import "./Navbar.css";
 import logo from "../images/logoo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faPhone, } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faClose, faLocationDot, faPhone, } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 
     const [show, setShow] = useState(true)
+    const [headerShow, setheaderShow] = useState(false)
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
@@ -16,6 +17,9 @@ const Header = () => {
         }
     }, [])
 
+    const handleHeaderShow = () => {
+        setheaderShow(!headerShow)
+    }
 
     const handleScroll = () => {
         if (window.scrollY > 100) {
@@ -37,7 +41,7 @@ const Header = () => {
                     <img className={show && 'img-show'} src={logo} alt="" />
                 </div>
 
-                <div className="Header-list">
+                <div className={`Header-list${headerShow ? `-show` : ""}`}>
                     <ul >
                         <li className="btnlist">
                             <span>Home</span>
@@ -51,10 +55,14 @@ const Header = () => {
                         <li className="btnlist">
                             <span>Contact</span>
                         </li>
-                        <li className="btnlist">
 
-                        </li>
                     </ul>
+                </div>
+
+                <div onClick={handleHeaderShow} className="toggle-Bars">
+
+                    {headerShow && <FontAwesomeIcon icon={faClose} /> || <FontAwesomeIcon icon={faBars} />}
+
                 </div>
             </div>
 

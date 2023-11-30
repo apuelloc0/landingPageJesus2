@@ -79,6 +79,10 @@
     color: orange;
 }
 
+.toggle-Bars {
+    display: none;
+}
+
 .Header-ul-2-show {
     width: 20%;
     height: 100%;
@@ -138,22 +142,87 @@ svg {
     }
 
     .Header-img img.img-show {
-        width: 44px;
-        height: 45px;
-        margin-top: 0
+        width: 42px;
+        height: 42px;
+        margin-top: 0;
+        position: absolute;
+        top: 15px;
+        left: 30px;
     }
 
     .Header-img img {
-        top: 14px;
-        width: 44px;
-        height: 45px;
+        width: 42px;
+        height: 42px;
         margin-top: 0;
+        position: absolute;
+        top: 15px;
+        left: 30px;
     }
 
+    .Header-ul {
+        width: 100%;
+        justify-content: space-between;
+    }
 
     .Header-list {
         display: none;
+        right: -188px;
+    }
 
+    .Header-list-show {
+        display: flex;
+        position: absolute;
+        width: 101%;
+        height: 93vh;
+        background-color: white;
+        top: 68px;
+        right: -1px;
+    }
+
+    .Header-list-show ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .Header-list-show ul li {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease 0.5s;
+    }
+
+    .Header-list-show ul li:hover {
+        background-color: rgb(240, 240, 240);
+    }
+
+    /* 
+    .Header-list-show ul li:not(:nth-child(4)) {
+        border-bottom: 0.1px solid rgb(241, 241, 241);
+    } */
+
+    .Header-list-show ul li span {
+        color: gray;
+    }
+
+    .toggle-Bars {
+        display: flex;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle-Bars svg {
+        border: none;
     }
 
     .Header-ul-2-show {
@@ -165,8 +234,7 @@ svg {
     }
 }
 
-/* @media (min-width: 501px),
-(max-width: 1200px) {
+/* @media (min-width: 1000px) {
     .Header-list {
         display: none;
     }

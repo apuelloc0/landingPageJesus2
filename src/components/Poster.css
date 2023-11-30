@@ -43,7 +43,15 @@
     }
 }
 
-/* @media (min-width: 501px),
-(max-width: 1200px) {
-    
+/* @media (min-width: 1000px) {
+    .Poster h1 {
+
+        width: 81%;
+        text-align: center;
+    }
+
+    .Poster p {
+        width: 80%;
+        text-align: center;
+    }
 } */
