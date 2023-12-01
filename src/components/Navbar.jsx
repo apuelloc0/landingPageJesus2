@@ -43,16 +43,16 @@ const Header = () => {
 
                 <div className={`Header-list${headerShow ? `-show` : ""}`}>
                     <ul >
-                        <li className="btnlist">
+                        <li onClick={() => setheaderShow(false)} className="btnlist">
                             <span>Home</span>
                         </li>
-                        <li className="btnlist">
+                        <li onClick={() => setheaderShow(false)} className="btnlist">
                             <span>About Us</span>
                         </li>
-                        <li className="btnlist">
+                        <li onClick={() => setheaderShow(false)} className="btnlist">
                             <span>Call Us</span>
                         </li>
-                        <li className="btnlist">
+                        <li onClick={() => setheaderShow(false)} className="btnlist">
                             <span>Contact</span>
                         </li>
 

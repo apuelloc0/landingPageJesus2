@@ -5,6 +5,7 @@ import Information from './components/Information'
 import Help from './components/Help'
 import Contact from './components/Contact'
 import Banner from './components/Banner'
+import Carrusel from './components/Carrusel'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Information />
       <Banner />
       <Help />
+      <Carrusel />
       <Contact />
     </>
   )

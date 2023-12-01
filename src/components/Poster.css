@@ -2,12 +2,12 @@
     width: 100%;
     height: 100vh;
     margin-top: 80px;
-    background: linear-gradient(rgba(1, 0, 9, 0.5), rgba(2, 0, 28, 0.5)),
-        url("../images/fontaneria.jpg");
+    background: linear-gradient(#01000980, rgba(2, 0, 28, 0.5)),
+        url("../images/fontanero.jpg");
     /* background-position: cover; */
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
 
 @media (max-width: 540px) {
     .Poster {
-        height: 600px;
+        height: 94vh;
         margin-top: 70px;
     }
 

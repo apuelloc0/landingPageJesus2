@@ -9,7 +9,7 @@ const Information = () => {
             <div className="info">
                 <span>We are the solution to your plumbing problems!</span>
                 <h2>Local Plumbing Company Serving The Community Proudly</h2>
-                <p>With more than 30 years of experience, the Plumbing services company has become the largest Plumbing company in the country.If you require Plumbing services or Plumbing solutions? Please Call:</p>
+                <p>With more than 15 years of experience, the Plumbing services company has become the largest Plumbing company in the country.If you require Plumbing services or Plumbing solutions? Please Call:</p>
             </div>
 
 

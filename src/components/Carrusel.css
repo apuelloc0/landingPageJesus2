@@ -1,0 +1,138 @@
+.Carrusel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.Carrusel-principalText {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+.Carrusel-principalText h2 {
+    font-size: 26px;
+    color: #333333;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0 10px 0;
+}
+
+.Carrusel-principalText p {
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    line-height: 23px;
+}
+
+.Carrusel-items {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Carrusel-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.Carrusel-text span {
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.Carrusel-text p {
+    font-size: 14px;
+    color: #333333;
+}
+
+.Carrusel-items img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 540px) {
+    .Carrusel {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .Carrusel-principalText {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0 10px 0;
+    }
+
+    .Carrusel-principalText h2 {
+        font-size: 26px;
+        color: #333333;
+        padding-bottom: 5px;
+        border-bottom: 1px solid lightgray;
+        margin: 10px 0 10px 0;
+    }
+
+    .Carrusel-principalText p {
+        font-size: 14px;
+        color: #333333;
+        text-align: center;
+        line-height: 23px;
+    }
+
+    .Carrusel-items {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 32px;
+    }
+
+    .Carrusel-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .Carrusel-text span {
+        font-size: 18px;
+        color: #333333;
+        font-weight: 500;
+    }
+
+    .Carrusel-text p {
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .Carrusel-items img {
+        width: 100%;
+        height: 195px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
