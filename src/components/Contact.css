@@ -6,20 +6,69 @@
 }
 
 .GetInTouch {
-    width: 50%;
+    width: 33%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 40px;
-    margin-left: 100px;
+    align-items: center;
 }
 
-.GetInTouch .contact-us .info-text h3 {
+.Licensed-Plumbers {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Licensed-Plumbers span {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Licensed-Plumbers p {
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+}
+
+.GetInTouch:nth-child(2) {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.GetInTouch:nth-child(2) span {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
     color: white;
 }
 
+.GetInTouch:nth-child(2) .contact-us {
+    width: 75%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #292929;
+}
+
+.contact-us .Schedule-item span {
+    color: gray;
+    font-size: 14px;
+}
+
+
 .Contact-flex {
-    width: 50%;
+    width: 33%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -87,37 +136,29 @@ form input[type="submit"]:hover {
 @media (max-width: 540px) {
     .Contact {
         flex-direction: column;
-        height: 600px;
+        height: auto;
     }
 
 
     .GetInTouch {
         width: 100%;
-        height: 50%;
+        height: 360px;
         gap: 14px;
-        margin-left: 0;
+        margin: 30px 0 0 0;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center
     }
 
-    .GetInTouch .contact-us {
-        width: 80%;
-        height: 70px
-    }
-
-    .GetInTouch .contact-us .info-text h3 {
-        font-size: 17px;
-    }
-
-    .GetInTouch .contact-us .info-text span {
-        font-size: 15px;
-        margin-left: 31px;
+    .GetInTouch:nth-child(2) {
+        width: 100%;
+        height: 360px;
+        margin: 0;
     }
 
     .Contact-flex {
         width: 100%;
-        height: 50%;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center

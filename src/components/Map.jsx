@@ -1,10 +1,19 @@
 import React from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
-// import L from "leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-// import icon from "leaflet/dist/images/marker-icon.png";
-// import iconShadow from "leaflet/dist/images/marker-icon.png";
+import icon from "leaflet/dist/images/marker-icon.png";
+import iconShadow from "leaflet/dist/images/marker-icon.png";
 import "./Map.css";
+
+let IconLocation = new L.icon({
+    iconUrl: icon,
+    iconShadow: iconShadow,
+    iconSize: [25, 41],
+    iconAnchor: [10, 35],
+    shadowAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+})
 
 const Map = () => {
 
@@ -17,31 +26,31 @@ const Map = () => {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker pathOptions={limeOptions} position={[41.85003, -87.65005]}>
+                <Marker icon={IconLocation} pathOptions={limeOptions} position={[31.2504400, -99.2506100]}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker>
-                <Marker position={[34.05223, -118.24368]}>
+                <Marker icon={IconLocation} position={[41.85003, -87.65005]}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker>
-                <Marker position={[29.76328, -95.36327]}>
+                <Marker icon={IconLocation} position={[35.7721, -78.63861]}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker>
-                <Marker position={[32.78306, -96.80667]}>
+                <Marker icon={IconLocation} position={[27.975443, -81.670873]}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker>
-                {/* <Marker position={[10.13625, -64.68618]}>
+                <Marker icon={IconLocation} position={[37.2502200, -119.7512600]}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
-                </Marker> */}
+                </Marker>
 
             </MapContainer>
         </div>

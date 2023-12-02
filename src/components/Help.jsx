@@ -27,26 +27,32 @@ const Help = () => {
 
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
-                            <span>Los Angeles, CA</span>
-                            <span>+123 456 7890</span>
+                            <span>Texas</span>
+                            <span>+833-944-9461</span>
                             {/* <span>70240</span> */}
                         </div>
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
-                            <span>Houston, TX</span>
-                            <span>+123 456 7890</span>
+                            <span>Illinois</span>
+                            <span>+877-390-0068</span>
                             {/* <span>70240</span> */}
                         </div>
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
-                            <span>Chicago, IL</span>
-                            <span>+123 456 7890</span>
+                            <span>North Carolina</span>
+                            <span>+844-646-1296</span>
                             {/* <span>70240</span> */}
                         </div>
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
-                            <span>Dallas, TX</span>
-                            <span>+123 456 7890</span>
+                            <span>Florida</span>
+                            <span>+877-322-3459</span>
+                            {/* <span>70240</span> */}
+                        </div>
+                        <div className="numbers">
+                            <FontAwesomeIcon icon={faPhone} />
+                            <span>California</span>
+                            <span>+844-562-0284</span>
                             {/* <span>70240</span> */}
                         </div>
                     </div>
