@@ -53,7 +53,7 @@ const Contact = () => {
                     <input type="text" name="Nombre" placeholder='Name' />
                     <input type="email" name="Correo" placeholder='Email' />
                     <textarea type="text" name="Mensaje" placeholder='Your Message' />
-                    <input type="submit" placeholder='' value="Send Message" />
+                    <input onClick={() => alert("Your message has been sent!")} type="submit" placeholder='' value="Send Message" />
 
                     <input type="hidden" name="_next" value='https://strong-otter-64dec7.netlify.app/' />
                     <input type="hidden" name="_captcha" value='false' />
