@@ -98,6 +98,13 @@ textarea {
     /* margin: 15px 0; */
     padding: 10px;
     font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+form input,
+textarea:focus {
+    background-color: rgb(2, 2, 25);
 }
 
 form textarea {

@@ -53,7 +53,7 @@ const Contact = () => {
                     <input type="text" name="Nombre" placeholder='Your Name' />
                     <input type="email" name="Correo" placeholder='Your Phone Number' />
                     <textarea type="text" name="Mensaje" placeholder='Your Message' />
-                    <input type="submit" placeholder='' value="Send Message" />
+                    <input onClick={() => alert("Your message has been sent!")} type="submit" placeholder='' value="Send Message" />
 
                     <input type="hidden" name="_next" value='http://localhost:5173/' />
                     <input type="hidden" name="_captcha" value='false' />
