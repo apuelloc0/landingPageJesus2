@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from "../images/logoo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose, faLocationDot, faPhone, } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-scroll"
 
 const Header = () => {
 
@@ -32,7 +33,6 @@ const Header = () => {
     }
 
 
-
     return (
         <div className={`Header ${show && 'Header-show'}`}>
 
@@ -43,19 +43,31 @@ const Header = () => {
 
                 <div className={`Header-list${headerShow ? `-show` : ""}`}>
                     <ul >
-                        <li onClick={() => setheaderShow(false)} className="btnlist">
-                            <span>Home</span>
+                        <li className="btnlist">
+                            <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
+                                <span onClick={() => setheaderShow(false)}>Home</span>
+                            </Link>
                         </li>
-                        <li onClick={() => setheaderShow(false)} className="btnlist">
-                            <span>About Us</span>
+                        <li className="btnlist">
+                            <Link to="information" spy={true} smooth={true} offset={50} duration={500} >
+                                <span onClick={() => setheaderShow(false)}>About Us</span>
+                            </Link>
                         </li>
-                        <li onClick={() => setheaderShow(false)} className="btnlist">
-                            <span>Call Us</span>
+                        <li className="btnlist">
+                            <Link to="help" spy={true} smooth={true} offset={50} duration={500} >
+                                <span onClick={() => setheaderShow(false)}>Call Us</span>
+                            </Link>
                         </li>
-                        <li onClick={() => setheaderShow(false)} className="btnlist">
-                            <span>Contact</span>
+                        <li className="btnlist">
+                            <Link to="carrusel" spy={true} smooth={true} offset={50} duration={500} >
+                                <span onClick={() => setheaderShow(false)}>Strengths</span>
+                            </Link>
                         </li>
-
+                        <li className="btnlist">
+                            <Link to="contact" spy={true} smooth={true} offset={50} duration={500} >
+                                <span onClick={() => setheaderShow(false)}>Contact</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
@@ -66,7 +78,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={show && 'Header-ul-2-show' || 'Header-ul-2'}>
+            {/* <div className={show && 'Header-ul-2-show' || 'Header-ul-2'}>
                 <div className="item">
                     <div className="info-text">
                         <h3><FontAwesomeIcon icon={faLocationDot} /> Our Location</h3>
@@ -79,7 +91,7 @@ const Header = () => {
                         <span>+123 456 7890</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

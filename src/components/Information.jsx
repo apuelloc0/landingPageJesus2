@@ -5,7 +5,7 @@ import tuberia from '../images/tuberia.jpg'
 
 const Information = () => {
     return (
-        <div className="Information">
+        <div className="Information" id="information">
             <div className="info">
                 <span>We are the solution to your plumbing problems!</span>
                 <h2>Local Plumbing Company Serving The Community Proudly</h2>

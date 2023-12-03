@@ -6,7 +6,7 @@ import "./Carrusel.css"
 function Carrusel() {
 
   return (
-    <div className="Carrusel">
+    <div className="Carrusel" id="carrusel">
 
       <div className="Carrusel-principalText">
         <h2>WHY CHOOSE US?</h2>

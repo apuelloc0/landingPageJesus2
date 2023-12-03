@@ -3,7 +3,7 @@ import "./Poster.css";
 
 const Poster = () => {
     return (
-        <div className='Poster'>
+        <div className='Poster' id="home">
             <h1>Do you need a Plumber?</h1>
             <br />
             <p>Your reliable solution for all your plumbing problems!</p>

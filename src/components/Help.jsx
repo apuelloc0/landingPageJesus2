@@ -8,7 +8,7 @@ import Map from './Map';
 
 const Help = () => {
     return (
-        <div className="Help">
+        <div className="Help" id="help">
             <div className="Need-Help">
                 <h2>Do you need Help?</h2>
             </div>
@@ -28,31 +28,31 @@ const Help = () => {
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
                             <span>Texas</span>
-                            <span>+833-944-9461</span>
+                            <span>833-944-9461</span>
                             {/* <span>70240</span> */}
                         </div>
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
                             <span>Illinois</span>
-                            <span>+877-390-0068</span>
+                            <span>877-390-0068</span>
                             {/* <span>70240</span> */}
                         </div>
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
                             <span>North Carolina</span>
-                            <span>+844-646-1296</span>
+                            <span>844-646-1296</span>
                             {/* <span>70240</span> */}
                         </div>
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
                             <span>Florida</span>
-                            <span>+877-322-3459</span>
+                            <span>877-322-3459</span>
                             {/* <span>70240</span> */}
                         </div>
                         <div className="numbers">
                             <FontAwesomeIcon icon={faPhone} />
                             <span>California</span>
-                            <span>+844-562-0284</span>
+                            <span>844-562-0284</span>
                             {/* <span>70240</span> */}
                         </div>
                     </div>
