@@ -10,8 +10,11 @@
 .Information-images {
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-
 
 .Information img:nth-child(1) {
     width: 255px;
@@ -52,12 +55,6 @@
     line-height: 22px;
 }
 
-.Information-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
 
 @media (max-width: 540px) {
     .Information {
