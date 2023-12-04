@@ -5,7 +5,7 @@
     background: linear-gradient(#01000980, rgba(2, 0, 28, 0.5)),
         url("../images/fontanero.jpg");
     /* background-position: cover; */
-    background-size: 100%;
+    background-size: contain;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
