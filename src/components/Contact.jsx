@@ -10,6 +10,7 @@ const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
+
         e.preventDefault();
 
         emailjs.sendForm('service_tnulopt', 'template_iw4w0t4', form.current, 'A2lcf4jBZsmleo1hn')
