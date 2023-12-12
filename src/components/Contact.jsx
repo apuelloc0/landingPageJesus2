@@ -1,10 +1,24 @@
-import React from 'react'
+// import React from 'react'
 import "./Contact.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEarthAmerica, faLocationCrosshairs, faPhone } from '@fortawesome/free-solid-svg-icons';
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEarthAmerica, faLocationCrosshairs, faPhone } from '@fortawesome/free-solid-svg-icons';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_clca8oc', 'template_9ly4b8k', form.current, 'aVPn5BYphBeiPnM0Y')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <div className='Contact' id="contact">
@@ -49,14 +63,13 @@ const Contact = () => {
 
             <div className="Contact-flex">
 
-                <form action="https://formsubmit.co/andresfpuello16@gmail.com" method="POST" className="Contact-form">
-                    <input type="text" name="Nombre" placeholder='Name' />
-                    <input type="email" name="Correo" placeholder='Email' />
-                    <textarea type="text" name="Mensaje" placeholder='Your Message' />
-                    <input onClick={() => alert("Your message has been sent!")} type="submit" placeholder='' value="Send Message" />
+                <form ref={form} onSubmit={sendEmail} className="Contact-form">
+                    <input type="text" name="from_name" placeholder='Name' />
+                    <input type="email" name="from_email" placeholder='Email' />
+                    <textarea type="text" name="from_message" placeholder='Your Message' />
+                    <input onClick={() => alert("Your message has been sent")} type="submit" placeholder='' value="Send Message" />
 
-                    <input type="hidden" name="_next" value='https://strong-otter-64dec7.netlify.app/' />
-                    <input type="hidden" name="_captcha" value='false' />
+
                 </form>
             </div>
 
@@ -66,5 +79,7 @@ const Contact = () => {
 }
 
 export default Contact
+
+
 
 
