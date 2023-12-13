@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./Navbar.css";
-import logo from "../images/logoo.svg";
+import logo from "../images/logo2.jpeg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose, faLocationDot, faPhone, } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-scroll"
