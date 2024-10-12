@@ -4,6 +4,8 @@ import "./Contact.css";
 // import { faEarthAmerica, faLocationCrosshairs, faPhone } from '@fortawesome/free-solid-svg-icons';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
+
 
 const Contact = () => {
 
@@ -68,7 +70,7 @@ const Contact = () => {
                     <input type="text" name="from_name" placeholder='Name' />
                     <input type="email" name="from_email" placeholder='Email' />
                     <textarea type="text" name="from_message" placeholder='Your Message' />
-                    <input onClick={() => alert("Your message has been sent")} type="submit" placeholder='' value="Send Message" />
+                    <input onClick={() => Swal.fire("Your message has been sent!")} type="submit" placeholder='' value="Send Message" />
 
 
                 </form>
